@@ -14,6 +14,7 @@ $("#calcular").click(function(){
 
     alert(resultado)
     
+    
     // If e Else
     if(valor1>valor2){
         msg = "Valor 1 é maior"
@@ -24,11 +25,14 @@ $("#calcular").click(function(){
         msg = "Valores são iguais"
     }
     alert(msg)
-            
+    
+
+    //tenário
+    msg = valor1 > valor2 ? 'Valor 1 é maior' : 'Valor 1 não é maior';
 
     switch(parseInt(resultado) % 2 ){
         case 0:
-            msg += ' - Resultado Par';
+            msg += ' - Resultado par';
             break;
         default:
             msg += ' - Resultado Ímpar';
