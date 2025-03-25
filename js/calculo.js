@@ -14,7 +14,7 @@ $("#calcular").click(function(){
 
     alert(resultado)
     
-
+    // If e Else
     if(valor1>valor2){
         msg = "Valor 1 é maior"
     }
