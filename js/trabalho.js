@@ -1,3 +1,5 @@
+var loop = 0
+
 $("#calcular").click(function () {
     var valor1 = parseInt($("#txtvalor1").val())
     var valor2 = parseInt($("#txtvalor2").val())
@@ -6,12 +8,15 @@ $("#calcular").click(function () {
     var ordem = [valor1, valor2, valor3].sort(function(a, b) {
         return a - b;
     });
+
     media = (valor1 + valor2 + valor3) / 3
 
-    var loop = 1
-    for (var x = 0; x < valor2; x++){
-        loop += x
+    for (var x = valor2 - 1; x < valor2; x++){
+        loop += valor2
     }
+    
+    
+
     $("#ordem")
         .text("Ordem crescente dos valores: " + ordem)
         .css({ 'font-weight': 'bold', 'font-size': '18pt', 'color': 'orange' })
@@ -23,6 +28,6 @@ $("#calcular").click(function () {
 
     $("#loop")
         .text("Os valores usados na 2° caixa são: " + loop)
-        .css({ 'font-weight': 'bold', 'font-size': '18pt', 'color': 'blue' })
+        .css({ 'font-weight': 'bold', 'font-size': '18pt', 'color': 'green' })
     
 });
