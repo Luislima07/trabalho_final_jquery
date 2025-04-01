@@ -27,7 +27,7 @@ $("#calcular").click(function () {
         .css({ 'font-weight': 'bold', 'font-size': '18pt', 'color': 'blue' })
 
     $("#loop")
-        .text("Os valores usados na 2° caixa são: " + loop)
+        .text("A soma s valores usados na 2° caixa são: " + loop)
         .css({ 'font-weight': 'bold', 'font-size': '18pt', 'color': 'green' })
     
 });
